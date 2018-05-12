@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { StockService } from '../services/stock-call-service.service'
+import { Observable } from 'rxjs';
+import { JsonPipe } from '@angular/common';
 
 @Component({
   selector: 'app-stocks-component',
@@ -13,7 +15,12 @@ export class StocksComponentComponent implements OnInit {
   constructor(private stockService: StockService) {}
 
   ngOnInit() {
-    this.stocks = this.stockService.getStocks();
+    this.stocks = this.stockService.getStocks()
+    .subscribe(
+          data => { this.stocks = data },
+          err => console.error(err),
+          () => console.log('done loading stocks')
+        );
   }
 
   // getStocksMethod() {

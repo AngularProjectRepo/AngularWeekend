@@ -4,23 +4,7 @@
   "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.1.",
   "main": "index.js",
   "dependencies": {
-<<<<<<< HEAD
     "express": "^4.16.3"
-=======
-    "@angular/animations": "^6.0.0",
-    "@angular/common": "^6.0.0",
-    "@angular/compiler": "^6.0.0",
-    "@angular/core": "^6.0.0",
-    "@angular/forms": "^6.0.0",
-    "@angular/http": "^6.0.0",
-    "@angular/platform-browser": "^6.0.0",
-    "@angular/platform-browser-dynamic": "^6.0.0",
-    "@angular/router": "^6.0.0",
-    "core-js": "^2.5.4",
-    "express": "^4.16.3",
-    "rxjs": "^6.1.0",
-    "zone.js": "^0.8.26"
->>>>>>> 41f89e1bc6a74be8cc2d34ccb8dcf7b8e6b0e9f2
   },
   "devDependencies": {},
   "scripts": {
