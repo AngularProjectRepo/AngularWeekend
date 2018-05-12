@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { StockService } from './stock.service'
+import { Component, Output, Input, OnInit } from '@angular/core';
+import { StockService } from './services/stock-call-service.service'
 
 @Component({
   selector: 'app-root',
@@ -7,21 +7,6 @@ import { StockService } from './stock.service'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
 
-  public stocks;
-
-  constructor(private stockService: StockService) {}
-
-  ngOnInit() {
-    this.getStocks();
-  }
-
-  getStocks() {
-    this.stockService.getStocks().subscribe(
-      data => { this.stocks = data  },
-      err => console.error(err),
-      () => console.log('done loading stocks')
-    );
-  }
+ 
 }
