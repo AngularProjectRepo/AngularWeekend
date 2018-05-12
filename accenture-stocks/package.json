@@ -22,11 +22,7 @@
     "@angular/router": "^6.0.0",
     "core-js": "^2.5.4",
     "express": "^4.16.3",
-<<<<<<< HEAD
     "rxjs": "^6.1.0",
-=======
-    "rxjs": "^6.0.0",
->>>>>>> 247e7f3348fb0d3b69702ed176837bd51a4622d8
     "zone.js": "^0.8.26"
   },
   "devDependencies": {
