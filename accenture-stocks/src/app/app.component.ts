@@ -7,7 +7,7 @@ import { StockService } from './stock.service'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Accenture Stocks';
 
   public stocks;
 
